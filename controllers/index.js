@@ -5,9 +5,12 @@ const getIndex = (req, res) => {
 }
 
 const getSearch = (req, res) => {
-	const keyword = req.query.keyword
-	const searchResults = restaurantsList.filter(restaurant =>
-		restaurant.name.includes(keyword)
+	const keyword = req.query.keyword.toLowerCase()
+	const searchResults = restaurantsList.filter(
+		restaurant =>
+			restaurant.name.toLowerCase().includes(keyword) ||
+			restaurant.name_en.toLowerCase().includes(keyword) ||
+			restaurant.category.includes(keyword)
 	)
 	res.render('index', { restaurants: searchResults })
 }
