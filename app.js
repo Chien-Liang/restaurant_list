@@ -9,6 +9,7 @@ app.use(express.static('public'))
 // Routers
 const index = require('./controllers/index')
 app.get('/', index.getIndex)
+app.get('/search', index.getSearch)
 
 // Link to server
 app.listen(3000, () => console.log('Listening to http://localhost:3000'))
