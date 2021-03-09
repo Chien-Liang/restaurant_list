@@ -7,9 +7,8 @@ app.set('view engine', 'hbs')
 app.use(express.static('public'))
 
 // Routers
-app.get('/', (req, res) => {
-	res.render('index')
-})
+const index = require('./controllers/index')
+app.get('/', index.getIndex)
 
 // Link to server
 app.listen(3000, () => console.log('Listening to http://localhost:3000'))
