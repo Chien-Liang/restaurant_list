@@ -5,8 +5,11 @@ const getIndex = (req, res) => {
 }
 
 const getSearch = (req, res) => {
-	console.log(req.query)
-	res.render('index')
+	const keyword = req.query.keyword
+	const searchResults = restaurantsList.filter(restaurant =>
+		restaurant.name.includes(keyword)
+	)
+	res.render('index', { restaurants: searchResults })
 }
 
 exports.getIndex = getIndex
