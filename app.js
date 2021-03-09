@@ -1,10 +1,13 @@
 // Setups
 const express = require('express')
 const app = express()
+const exphbs = require('express-handlebars')
+app.engine('hbs', exphbs({ defaultLayout: 'main', extname: 'hbs' }))
+app.set('view engine', 'hbs')
 
 // Routers
 app.get('/', (req, res) => {
-	res.send('<h1>Test</h1>')
+	res.render('index')
 })
 
 // Link to server
