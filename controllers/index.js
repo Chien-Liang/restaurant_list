@@ -17,7 +17,8 @@ const getSearch = (req, res) => {
 
 const getShowpage = (req, res) => {
 	const id = +req.params.id
-	res.render('showPage', { restaurant: restaurantsList[id - 1] })
+	const title = true
+	res.render('showPage', { restaurant: restaurantsList[id - 1], title })
 }
 
 exports.getIndex = getIndex

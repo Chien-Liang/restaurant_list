@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/bootstrap.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
+  {{#if title}}
+  <title>{{restaurant.name}}</title>
+  {{else}}
   <title>我的餐廳清單</title>
+  {{/if}}
 </head>
 <body>
   {{!-- Layouts --}}
