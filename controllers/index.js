@@ -12,7 +12,10 @@ const getSearch = (req, res) => {
 			restaurant.name_en.toLowerCase().includes(keyword) ||
 			restaurant.category.includes(keyword)
 	)
-	res.render('index', { restaurants: searchResults })
+	res.render('index', {
+		restaurants: searchResults,
+		searchWord: req.query.keyword,
+	})
 }
 
 const getShowpage = (req, res) => {
