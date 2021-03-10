@@ -8,11 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="stylesheet" href="/stylesheets/bootstrap.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
-  {{#if title}}
-  <title>{{restaurant.name}}</title>
-  {{else}}
-  <title>我的餐廳清單</title>
-  {{/if}}
+  <title>{{#if title}} {{restaurant.name}} {{else}} 我的餐廳清單 {{/if}}</title>
 </head>
 <body>
   {{!-- Layouts --}}
