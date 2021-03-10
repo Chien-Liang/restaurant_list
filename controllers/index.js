@@ -15,5 +15,11 @@ const getSearch = (req, res) => {
 	res.render('index', { restaurants: searchResults })
 }
 
+const getShowpage = (req, res) => {
+	console.log(req.params)
+	res.render('showPage')
+}
+
 exports.getIndex = getIndex
 exports.getSearch = getSearch
+exports.getShowpage = getShowpage

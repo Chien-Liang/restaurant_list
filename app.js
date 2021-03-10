@@ -10,6 +10,7 @@ app.use(express.static('public'))
 const index = require('./controllers/index')
 app.get('/', index.getIndex)
 app.get('/search', index.getSearch)
+app.get('/restaurants/:id', index.getShowpage)
 
 // Link to server
 app.listen(3000, () => console.log('Listening to http://localhost:3000'))
