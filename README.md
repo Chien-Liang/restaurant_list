@@ -4,19 +4,19 @@ A simple project by using Express.js
 
 ## Project Initialize
 
-1. Download project by Terminal
+1. **Download project by Terminal**
 
 ```
 git clone https://github.com/Chien-Liang/restaurant_list
 ```
 
-2. Enter project directory
+2. **Enter project directory**
 
 ```
 cd restaurant_list
 ```
 
-3. Install packages
+3. **Install packages**
 
 ```
 // Express.js
@@ -29,14 +29,14 @@ npm i express-handlebars
 npm i nodemon
 ```
 
-4. Run the server
+4. **Run the server**
 
 ```
 npm run dev
 ```
 
-5. Start App
-   After "Listening to http://localhost:3000" appeared in Terminal, type "http://localhost:3000" in broswer to start the app.
+5. **Start App**
+   > After "Listening to http://localhost:3000" appeared in Terminal, type "http://localhost:3000" in broswer to start the app.
 
 ## Features
 
