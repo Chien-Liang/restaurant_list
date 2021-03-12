@@ -36,7 +36,7 @@ npm run dev
 ```
 
 5. **Start App**
-   > After `Listening to http://localhost:3000` appeared in Terminal, type "http://localhost:3000" in broswer to start the app.
+   > After `Listening to http://localhost:3000` appeared in Terminal, type `http://localhost:3000` in broswer to start the app.
 
 ## Features
 
