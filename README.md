@@ -4,34 +4,46 @@ A simple project by using Express.js
 
 ## Project Initialize
 
+1. Download project by Terminal
+
 ```
-<!-- 1. Download project by Terminal -->
 git clone https://github.com/Chien-Liang/restaurant_list
+```
 
-<!-- 2. Enter project repository -->
+2. Enter project directory
+
+```
 cd restaurant_list
+```
 
-<!-- 3. Install packages -->
+3. Install packages
 
-<!-- Express.js -->
+```
+// Express.js
 npm i express
 
-<!-- express-handlebars -->
+// express-handlebars
 npm i express-handlebars
 
-<!-- 4. Run server -->
+// nodemon
+npm i nodemon
+```
+
+4. Run the server
+
+```
 npm run dev
 ```
 
-- Go to website
-  After "Listening to http://localhost:3000" appeared, type "localhost:3000" in broswer to start the app.
+5. Start App
+   After "Listening to http://localhost:3000" appeared in Terminal, type "http://localhost:3000" in broswer to start the app.
 
 ## Features
 
-- listing restaurants from restaurants.json
-- searching restaurants by keywords
-- get detail informations by clicking on each restaurants
+- Listing restaurants from restaurants.json
+- Searching restaurants by keywords
+- Get detail informations by clicking on each restaurants
 
 ### Searching
 
-type the name(English as well) or category of the restaurant in search bar
+Type the name(English as well) or category of the restaurant in search bar
